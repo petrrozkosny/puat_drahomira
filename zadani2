@@ -1,0 +1,9 @@
+1.	Vytvořte si proměnnou zacatek s hodnotou rovnající se aktuálnímu datumu a času
+2.	Otevřete dokument akcie.xlsm
+3.	Spusťte Makro ThisWorkbook.aktualizuj
+4.	Dokument uložte pod názvem akcie-aktualizovano.xlsm
+5.	Uzavřete Excel
+6.	Vytvořte si proměnnou konec s hodnotou rovnající se aktuálnímu datumu a času
+7.	Do proměnné doba_behu si spočítejte rozdíl mezi konec a začátek
+8.	Uživateli vypište do zprávy Doba běhu skriptu {hodnota z bodu 7}
+9.	Ukončete datový tok

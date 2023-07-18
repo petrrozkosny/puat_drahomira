@@ -1,0 +1,52 @@
+
+Tok uživatelské rozhraní
+1.	Vytvořte si na ploše složku s názvem PAUT
+2.	Kliknutí ukazatele na ikonu Koš
+3.	Kliknutí na tlačítko pro „Vysypání koše“
+4.	Přejděte do složky PAUT
+5.	Přejděte na ikonu „Vlastnosti“ a odešlete kliknutí levým tlačítkem
+6.	Zavřete okno otevřené po vytvoření bodu 5
+ 
+Automatizace prohlížeče
+1.	Otevřete nové okno prohlížeče a přejděte na adresu https://www.google.cz
+2.	Do vyhledávacího pole zapište „počasí praha“
+3.	Odešlete klávesu „Enter“
+4.	Pořiďte snímek obrazovky, který zkopírujete do schránky
+5.	Získejte informaci o aktuálním počasí (teplota) a tu si nechejte v proměnné.
+
+_________________________________________________________________________
+_________________________________________________________________________
+
+Cvičení souhrn
+•	Do složky Plocha ručně vytvořte dokument „pocasi.xlsx“
+•	První list ručně pojmenujte „pocasi“
+•	Do prvního sloupce vepište tyto hodnoty (vždy 1 hodnota = 1 řádek)
+a.	praha
+b.	brno
+c.	ostrava
+d.	plzeň
+e.	olomouc
+Vytvořte tok, který:
+1.	Vygeneruje proměnnou pro dnešní datum a čas
+2.	Otevře dokument „pocasi.xlsx“.
+3.	Prochází neprázdné hodnoty prvního sloupce prvního listu
+4.	Tyto hodnoty dosazuje do vyhledávacího pole na Google, kdy dosazuje „počasí“ + hodnota (město)
+5.	Získá teplotu pro danou hodnotu
+6.	Zkopíruje teplotu do druhého sloupce Excel dokumentu (vždy ke konkrétnímu městu)
+7.	Do třetího sloupce doplní informaci o datumu a čase
+8.	Uloží a zavře „pocasi.xlsx“
+9.	Uzavře prohlížeč
+10.	Ošetřete následující chyby / výjimky
+a.	soubor z bodu 2 se nepodařilo otevřít : vracíme uživateli v oknu zprávu „soubor nenalezen či nejde otevřít“ a tok ukončujeme
+b.	pokud je první neprázdný řádek a sloupec Excel z bodu 2 roven 1 (po odčtení 1), vracíme uživateli zprávu „soubor je prázdný“ a tok ukončujeme
+c.	pokud soubor z bodu 2:
+i.	 nešlo otevřít, do výstupní proměnné s názvem „log“ ukládáme hodnotu „selhalo“ + datum z proměnné z bodu 1
+ii.	šlo otevřít, do výstupní proměnné s názvem „log“ ukládáme hodnotu „probehlo“ + datum z proměnné bodu 1
+
+
+
+
+
+
+
+
